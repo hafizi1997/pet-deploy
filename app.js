@@ -51,7 +51,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@refresher.jgk3g.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority&appName=Refresher`
+    `mongodb+srv://hafizipet:1291997kamal@refresher.jgk3g.mongodb.net/petapp?retryWrites=true&w=majority&appName=Refresher`
   )
   .then(() => {
     console.log("Connected to MongoDB...");
